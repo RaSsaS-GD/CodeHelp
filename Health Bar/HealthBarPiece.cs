@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class HealthBarPiece : MonoBehaviour
 {
-    public Sprite emptyBar, oneQuartBar, halfBar, threeQuartsBar, fullBar;
+    public Sprite emptyBar, oneQuarterBar, halfBar, threeQuartersBar, fullBar;
     Image barImage;
 
     private void Awake()
@@ -20,14 +20,14 @@ public class HealthBarPiece : MonoBehaviour
             case BarStatus.Empty:
                 barImage.sprite = emptyBar;
                 break;
-            case BarStatus.OneQuart:
-                barImage.sprite = oneQuartBar;
+            case BarStatus.OneQuarter:
+                barImage.sprite = oneQuarterBar;
                 break;
             case BarStatus.Half:
                 barImage.sprite = halfBar;
                 break;
-            case BarStatus.ThreeQuarts:
-                barImage.sprite = threeQuartsBar;
+            case BarStatus.ThreeQuarters:
+                barImage.sprite = threeQuartersBar;
                 break;
             case BarStatus.Full:
                 barImage.sprite = fullBar;
@@ -39,8 +39,8 @@ public class HealthBarPiece : MonoBehaviour
 public enum BarStatus
 {
     Empty,
-    OneQuart,
+    OneQuarter,
     Half,
-    ThreeQuarts,
+    ThreeQuarters,
     Full
 }
